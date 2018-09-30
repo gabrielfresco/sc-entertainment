@@ -1,7 +1,1 @@
-{
-    "require": {
-        "mailgun/mailgun-php": "*",
-        "php-http/guzzle6-adapter": "*",
-        "php-http/message": "*"
-    }
-}
+{}
