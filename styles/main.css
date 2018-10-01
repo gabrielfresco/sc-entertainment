@@ -12125,7 +12125,7 @@ footer ul.menu-footer li a {
 
 @media (min-width:768px) {
     .intro {
-        height: calc(100% - 100px)
+        height: calc(100% - 80px)
     }
     .intro.full-height {
         height: 100%
