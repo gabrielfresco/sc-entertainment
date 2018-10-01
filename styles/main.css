@@ -13136,6 +13136,8 @@ input.btn.rounded {
 }
 
 .player.horizontal .audiojs .play-pause .pause {
+    position: relative;
+    top: 0.5px;
     background: url(../images/players-intro.png) 16px -41px no-repeat
 }
 
@@ -14691,7 +14693,9 @@ ul.slider-twitter .flickity-page-dots .dot.is-selected {
 }
 
 .disc-tracklist .audiojs .pause {
-    background: url(../images/players-album.png) no-repeat
+    background: url(../images/players-album.png) no-repeat;
+    top: 2px;
+    position: relative;
 }
 
 .disc-tracklist .audiojs .loading {
