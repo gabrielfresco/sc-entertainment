@@ -2,6 +2,7 @@
     "require": {
         "mailgun/mailgun-php": "*",
         "php-http/guzzle6-adapter": "*",
-        "php-http/message": "*"
+        "php-http/message": "*",
+        "sendgrid/sendgrid": "~7"
     }
 }

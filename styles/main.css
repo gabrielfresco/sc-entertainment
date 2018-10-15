@@ -5038,6 +5038,10 @@ textarea.input-group-sm>.input-group-btn>.btn {
     -webkit-overflow-scrolling: touch
 }
 
+.navbar-collapse .social-links {
+    margin-top: 0.8em;
+}
+
 .navbar-collapse:after,
 .navbar-collapse:before {
     content: " ";
@@ -11576,9 +11580,7 @@ header {
 }
 
 @media (min-width:1600px) {
-    header {
-        top: 16px
-    }
+
 }
 
 header.overflow {
@@ -11652,16 +11654,9 @@ header .navbar-brand img {
     max-height: 100%
 }
 
-@media (min-width:1600px) {
-    header .navbar-collapse {
-        padding-left: 55px;
-        padding-right: 55px
-    }
-}
-
 @media (min-width:992px) {
     .navbar-default .navbar-nav {
-        margin: 20px 0 15px
+        margin: 23px 0 23px;
     }
 }
 

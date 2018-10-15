@@ -1,7 +1,7 @@
 <?php  
 # Include the Autoloader (see "Libraries" for install instructions)
 require 'vendor/autoload.php';
-use Mailgun\Mailgun;
+/*use Mailgun\Mailgun;
 
 # Instantiate the client.
 $mgClient = new Mailgun('69f6be3ba6fb761ab78bfb909fb41ee2-c8e745ec-39634e8c');
@@ -13,5 +13,28 @@ $result = $mgClient->sendMessage($domain, array(
     'to'      => 'Baz <gfresco9@atixlabs.com>',
     'subject' => 'Hello',
     'text'    => 'Testing some Mailgun awesomness!'
-));
+));*/
+//use SendGrid;
+//$sendgrid = new SendGrid($apiKey);
+$email = new \SendGrid\Mail\Mail();
+
+$email->addTo("gfresco@atixlabs.com");
+$email->setFrom("gabriel.fresco09@gmail.com");
+$email->setSubject("Sending with SendGrid is Fun");
+$email->addContent(
+    "text/plain", "and easy to do anywhere, even with PHP"
+);
+$email->addContent(
+    "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
+);
+
+$sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
+try {
+    $response = $sendgrid->send($email);
+    print $response->statusCode() . "\n";
+    print_r($response->headers());
+    print $response->body() . "\n";
+} catch (Exception $e) {
+    echo 'Caught exception: ',  $e->getMessage(), "\n";
+}
 ?>
