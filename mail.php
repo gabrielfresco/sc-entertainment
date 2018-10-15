@@ -18,15 +18,16 @@ $result = $mgClient->sendMessage($domain, array(
 //$sendgrid = new SendGrid($apiKey);
 $email = new \SendGrid\Mail\Mail();
 
-$email->addTo("gfresco@atixlabs.com");
-$email->setFrom("gabriel.fresco09@gmail.com");
-$email->setSubject("Sending with SendGrid is Fun");
+$email->addTo("gabriel.fresco09@atixlabs.com");
+//$email->addTo("jlombardo@scentertainment.biz");
+$email->setFrom($_POST['email']);
+$email->setSubject("Booking SC - " . $_POST['name']);
 $email->addContent(
-    "text/plain", "and easy to do anywhere, even with PHP"
+    "text/plain", $_POST['message']
 );
-$email->addContent(
+/*$email->addContent(
     "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
-);
+);*/
 
 $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
 $response = $sendgrid->send($email);
