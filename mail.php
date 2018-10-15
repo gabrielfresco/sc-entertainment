@@ -19,7 +19,9 @@ $result = $mgClient->sendMessage($domain, array(
 $email = new \SendGrid\Mail\Mail();
 
 $email->addTo("gabriel.fresco09@gmail.com");
-//$email->addTo("jlombardo@scentertainment.biz, ");
+$email->addTo("walterfresco@gmail.com");
+//$email->addTo("jlombardo@scentertainment.biz");
+//$email->addTo("acattoandrea@gmail.com");
 $email->setFrom($_POST['email'], $_POST['name']);
 $email->setSubject("Booking SC");
 $email->addContent(
