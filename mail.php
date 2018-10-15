@@ -18,10 +18,10 @@ $result = $mgClient->sendMessage($domain, array(
 //$sendgrid = new SendGrid($apiKey);
 $email = new \SendGrid\Mail\Mail();
 
-$email->addTo("gabriel.fresco09@atixlabs.com");
-//$email->addTo("jlombardo@scentertainment.biz");
-$email->setFrom($_POST['email']);
-$email->setSubject("Booking SC - " . $_POST['name']);
+$email->addTo("gabriel.fresco09@gmail.com");
+//$email->addTo("jlombardo@scentertainment.biz, ");
+$email->setFrom($_POST['email'], $_POST['name']);
+$email->setSubject("Booking SC");
 $email->addContent(
     "text/plain", $_POST['message']
 );
