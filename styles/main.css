@@ -2832,6 +2832,7 @@ textarea.input-lg {
     background-color: #fcf8e3
 }
 
+
 .has-error .checkbox,
 .has-error .checkbox-inline,
 .has-error .control-label,
@@ -16522,4 +16523,23 @@ ul.slider-twitter .flickity-page-dots .dot.is-selected {
         -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
         transform: scale(1.05);
+}
+.form-error{
+    display: block;
+    margin-top: 2em;
+    border-top: 3px solid #ff1744;
+    padding: 0.5em 0em;
+    font-weight: 600;
+    color: #ff1744;
+    font-size: 13.5px;
+}
+
+.form-success{
+    display: block;
+    margin-top: 2em;
+    border-top: 3px solid #69f0ae;
+    padding: 0.5em 0em;
+    font-weight: 600;
+    color: #69f0ae;
+    font-size: 13.5px;
 }

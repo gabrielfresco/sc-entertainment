@@ -98,8 +98,6 @@
       </div>
       <div class="row">
         <div class="col-sm-6 col-md-7" id="form-container">
-          <div id="messagesent" style="display: none;" class="secondtitle">Mensaje enviado correctamente</div>
-          <div id="message-error" style="display: none;" class="secondtitle">El mensaje no ha sido enviado, por favor verifique los datos ingresados.</div>
           <form action="mail.php" method="post" id="contactform" class="contact-form">
             <div class="form-group">
               <label class="title small" for="name">Nombre:</label>
@@ -121,11 +119,37 @@
 
             <!-- <div class="formSent"><p><strong>Your Message Has Been Sent!</strong> Thank you for contacting us.</p></div> -->
             <input type="submit" value="Enviar" class="btn rounded">
-            <div class="voffset80"></div>
+
           </form>
+          <div id="message-error" style="display: none;" class="secondtitle form-error">El mensaje no ha sido enviado, por favor verifique los datos ingresados.</div>
+          <div id="messagesent" style="display: block;" class="secondtitle form-success">El mensaje fue enviado !</div>
         </div>
         <div class="col-sm-6 col-md-5">
           <div class="col-contact">
+            <h4 class="title small">Contrataciones</h4>
+            <div class="m-top-em">
+              <p class="m-bottom-05em"> <strong> Jose Luis Lombardo</strong></p>
+              <div class=" flex-center">
+                <img src="images/mail.svg" alt="" width="20px">
+                <p>Email: jlombardo@scentertainment.biz</p>
+              </div>
+              <div class=" flex-center">
+                <img src="images/phone.svg" alt="" width="20px">
+                <p>Teléfono: (0054) 011-5154 – 2718</p>
+              </div>
+            </div>
+            <div class="m-top-em">
+              <p class="m-bottom-05em"> <strong> Andrea Acatto</strong></p>
+              <div class=" flex-center">
+                <img src="images/mail.svg" alt="" width="20px">
+                <p>Email: acattoandrea@gmail.com</p>
+              </div>
+              <div class=" flex-center">
+                <img src="images/phone.svg" alt="" width="20px">
+                <p>Teléfono: (0054) 011-6438 – 9256</p>
+              </div>
+            </div>
+
             <h4 class="title small">Label & Licensing</h4>
             <div class="m-top-em">
               <p class="m-bottom-05em"> <strong> Walter Fresco</strong></p>
@@ -136,17 +160,6 @@
               <div class=" flex-center">
                 <img src="images/phone.svg" alt="" width="20px">
                 <p>Teléfono: (0054) 011-3357 - 5480</p>
-              </div>
-            </div>
-            <div class="m-top-em">
-              <p class="m-bottom-05em"> <strong> Jose Luis Lombardo</strong></p>
-              <div class=" flex-center">
-                <img src="images/mail.svg" alt="" width="20px">
-                <p>Email: jlombardo@scentertainment.biz</p>
-              </div>
-              <div class=" flex-center">
-                <img src="images/phone.svg" alt="" width="20px">
-                <p>Teléfono: (0054) 011-5154 – 2718</p>
               </div>
             </div>
 
@@ -166,7 +179,9 @@
           </div>
         </div>
       </div>
+      <div class="voffset80"></div>
     </div>
+
   </section>
   <!-- FOOTER -->
   <footer>

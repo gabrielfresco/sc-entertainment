@@ -7,8 +7,8 @@ $("#contactform").submit(function (e) {
         url: url,
         data: form.serialize(), // serializes the form's elements.
         success: function (data) {
-            $("#contactform").hide('fast');
-            $("#messagesent").css("display", "block"); // show response from the php script.
+            $("#messagesent").css("display", "block");
+            $('#contactform').trigger("reset");
         },
         error: function (err) {
             $("#message-error").css("display", "block");
